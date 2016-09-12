@@ -1,0 +1,4 @@
+pip install soco
+pip install python-nest
+git clone https://github.com/Einstein42/sonos-polyglot Polyglot/config/node_servers/sonos-polyglot
+git clone https://github.com/Einstein42/nest-polyglot Polyglot/config/node_servers/nest-polyglot

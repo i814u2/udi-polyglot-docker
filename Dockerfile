@@ -17,6 +17,7 @@ RUN pip install --upgrade pip
 RUN mkdir Polyglot && wget https://github.com/UniversalDevicesInc/Polyglot/raw/unstable-release/bin/${binfile} -P Polyglot
 COPY pip-upgrade-all.py ./Polyglot
 COPY startup.sh ./Polyglot
+COPY file.arch ./Polyglot
 RUN chown -R ${user}:${group} /home/${user} \
     && chmod 755 /home/${user}/Polyglot/${binfile} \
 	&& chmod 755 /home/${user}/Polyglot/startup.sh
